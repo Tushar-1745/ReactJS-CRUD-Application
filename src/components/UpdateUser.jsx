@@ -41,7 +41,7 @@ export default function UpdateUser() {
     }, [])
     
     const updateUserDetails = async () => {
-        await updateUser(user, id);
+        await updateUser(id, user);
         navigate("/all")
     };
 
